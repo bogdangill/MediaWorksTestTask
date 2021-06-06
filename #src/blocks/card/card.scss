@@ -6,18 +6,30 @@
   min-height: 235px;
   background-color: $color-pale;
   border-radius: 6px;
+
+  @media (max-width: $screen-md - 1) {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
 }
 
 .card__text-block {
-  flex-basis: 290px;
-  order: 1;
-  padding: 40px 0 0 40px;
+  @media (min-width: $screen-md) {
+    flex-basis: 60%;
+    padding-top: 7.3%;
+    padding-left: 7.3%;
+    order: 1;
+  }
 }
 
 .card__image-block {
-  flex-basis: 190px;
-  order: 2;
-  padding: 20px 20px 0 0;
+  @media (min-width: $screen-md) {
+    // flex-basis: 190px;
+    flex-basis: 34.5%;
+    order: 2;
+    margin: 20px 10px;
+  }
 }
 
 .card__title {
@@ -29,4 +41,8 @@
 
 .card__text {
   font-family: inherit;
+}
+
+.card__image {
+  float: right;
 }

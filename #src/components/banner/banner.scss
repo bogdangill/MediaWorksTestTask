@@ -2,28 +2,40 @@
   position: relative;
   color: white;
   background-image: linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
-  padding: 70px;
+  padding: 6%;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .banner__text {
   position: relative;
-  font-size: 2.12rem;
+  font-size: 1.4rem;
   line-height: 1.3em;
   font-weight: 600;
   max-width: 560px;
   margin-bottom: 45px;
   z-index: 2;
+
+  @media (min-width: $screen-md) {
+    font-size: 2.12rem;
+  }
 }
 
 .banner__btn {
   position: relative;
-  max-width: 222px;
   z-index: 2;
+
+  @media (min-width: $screen-md) {
+    max-width: 222px;
+  }
 }
 
 .banner__img {
   position: absolute;
-  top: 20px;
+  top: 100px;
   right: 0;
+
+  @media (min-width: $screen-md) {
+    top: 20px;
+  }
 }

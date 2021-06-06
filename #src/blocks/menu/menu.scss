@@ -1,11 +1,33 @@
 .menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   list-style: none;
+  width: 100%;
   padding: 0;
   margin: 0;
 
-  @media (max-width: $sm) {
+  @media (max-width: $screen-md - 1) {
+    flex-direction: column;
     justify-content: center;
+  }
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $screen-md) {
+    margin-right: 8.5%;
+  }
+
+  @media (max-width: $screen-md - 1) {
+    flex-basis: 100%;
+    padding: 1em;
+    border-bottom: 1px solid white;
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }

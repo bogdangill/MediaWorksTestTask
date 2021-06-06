@@ -1,13 +1,25 @@
 .advantages {
-  padding: 130px 0;
+  padding: 6.7% 0;
 }
 
 .advantages__title {
   color: $color-palite;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 1.3em;
   font-weight: 600;
   margin-bottom: 50px;
+
+  @media (max-width: $screen-md - 1) {
+    max-width: 270px;
+  } 
+
+  @media (min-width: $screen-md) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: $screen-xl) {
+    font-size: 2.5rem;
+  }
 }
 
 .advantages__row {
@@ -17,7 +29,7 @@
 .advantages__col {
   @include col(xs, 12);
 
-  @media (max-width: $screen-md) {
+  @media (max-width: $screen-lg) {
     margin-bottom: 30px;
   }
 
@@ -26,6 +38,6 @@
   }
 }
 
-.advantages__col--md-6 {
-  @include col(md, 6);
+.advantages__col--lg-6 {
+  @include col(lg, 6);
 }

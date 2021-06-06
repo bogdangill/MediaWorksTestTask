@@ -1,4 +1,4 @@
-const popupTriggers = document.querySelectorAll(".btn--popup");
+const popupTriggers = document.querySelectorAll(".has-popup");
 const body = document.querySelector("body");
 const lockPaddings = document.querySelectorAll(".lock-padding"); //все фиксированные объекты
 
