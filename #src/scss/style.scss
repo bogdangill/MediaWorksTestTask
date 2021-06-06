@@ -1,0 +1,59 @@
+/*
+ 
+ _ _  _ ____ _    _  _ ___  ____    ___  ____ ____ _ ____ ____ 
+ | |\ | |    |    |  | |  \ |___    |__] |__| [__  | |    [__  
+ | | \| |___ |___ |__| |__/ |___    |__] |  | ___] | |___ ___] 
+                                                               
+ 
+*/
+
+@import 'variables';
+@import 'global';
+@import 'mixins';
+@import 'fonts';
+
+/*
+ 
+ _ _  _ ____ _    _  _ ___  ____    ___  _    _  _ ____ _ _  _ ____ 
+ | |\ | |    |    |  | |  \ |___    |__] |    |  | | __ | |\ | [__  
+ | | \| |___ |___ |__| |__/ |___    |    |___ |__| |__] | | \| ___] 
+                                                                    
+ 
+*/
+
+// @import '../plugins/bootstrap-grid/bootstrap-grid.scss';
+@import 'grid-mixins';
+
+/*
+ 
+ _ _  _ ____ _    _  _ ___  ____    ___  _    ____ ____ _  _ ____ 
+ | |\ | |    |    |  | |  \ |___    |__] |    |  | |    |_/  [__  
+ | | \| |___ |___ |__| |__/ |___    |__] |___ |__| |___ | \_ ___] 
+                                                                  
+ 
+*/
+
+@import '../blocks/menu/menu.scss';
+@import '../blocks/btn/btn.scss';
+@import '../blocks/link/link.scss';
+@import '../blocks/container/container.scss';
+@import '../blocks/card/card.scss';
+@import '../blocks/input-box/input-box.scss';
+@import '../blocks/btn-close/btn-close.scss';
+
+/*
+ 
+ _ _  _ ____ _    _  _ ___  ____    ____ ____ _  _ ___  ____ _  _ ____ _  _ ___ ____ 
+ | |\ | |    |    |  | |  \ |___    |    |  | |\/| |__] |  | |\ | |___ |\ |  |  [__  
+ | | \| |___ |___ |__| |__/ |___    |___ |__| |  | |    |__| | \| |___ | \|  |  ___] 
+                                                                                     
+ 
+*/
+
+@import '../components/page/page.scss';
+@import '../components/header/header.scss';
+@import '../components/hero/hero.scss';
+@import '../components/advantages/advantages.scss';
+@import '../components/banner/banner.scss';
+@import '../components/popup/popup.scss';
+@import '../components/form/form.scss';
