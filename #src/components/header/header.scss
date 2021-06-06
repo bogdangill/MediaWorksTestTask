@@ -1,0 +1,40 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: white;
+  z-index: 5;
+}
+
+.header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+  }
+}
+
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 40%;
+  flex-grow: 1;
+  padding: 0 2.5%;
+}
+
+.header__link {
+  font-weight: 325;
+}
+
+.header__logo,
+.header__menu,
+.header__btn {
+  margin: .5em 0;
+
+  @media (min-width: $lg) {
+    margin: 1em 0;
+  }
+}

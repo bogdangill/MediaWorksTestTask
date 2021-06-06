@@ -1,0 +1,11 @@
+.page {
+  font-family: 'Whitney', sans-serif;
+  width: 100%;
+  color: $color-text-default;
+  font-size: calcFluidFontSize(14, 16, 320, 1600);
+  line-height: 1.5em;
+}
+
+.page__banner {
+  padding-bottom: 185px;
+}

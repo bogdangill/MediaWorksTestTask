@@ -1,0 +1,46 @@
+.hero {
+  color: white;
+  background-image: linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+  padding: 155px 0 100px 0;
+}
+
+.hero__row {
+  @include row(0,0,0,0,0,0);
+}
+
+.hero__text-block,
+.hero__image-block {
+  flex-basis: 100%;
+}
+
+.hero__text-block {
+  @media (min-width: $screen-lg) {
+    flex-basis: 45%;
+  }
+}
+
+.hero__image-block {
+  @media (min-width: $screen-lg) {
+    flex-basis: 55%;
+  }
+}
+
+.hero__title {
+  color: inherit;
+  font-weight: 600;
+  font-size: 3.12rem;
+  line-height: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero__text {
+  color: inherit;
+  font-weight: 350;
+  font-size: 1.5rem;
+  line-height: 1.3em;
+  margin-bottom: 60px;
+}
+
+.hero__btn {
+  max-width: 222px;
+}

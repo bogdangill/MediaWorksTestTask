@@ -1,0 +1,42 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius;
+  padding: 13px 22px;
+  white-space: nowrap;
+  transition: all $transition-time ease-in-out;
+  border: none;
+}
+
+.btn__icon {
+  width: 25px;
+  height: 25px;
+  fill: currentColor;
+  margin-right: 12px;
+
+  &:only-child {
+    margin: 0; 
+  }
+}
+
+@mixin btn--theme($color, $bgcolor) {
+  color: $color;
+  background-color: $bgcolor;
+}
+
+.btn--primary {
+  @include btn--theme(white, $color-primary);
+  font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 1em;
+  text-decoration: none;
+
+  &:hover {
+    background-color: darken($color-primary, 10%);
+  }
+}
+
+.btn--popup {
+  @include btn--theme(white, transparent);
+}

@@ -1,0 +1,28 @@
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 35px;
+  }
+}
+
+.input-box__title {
+  font-size: 1.12rem;
+  line-height: 1.3em;
+  margin-bottom: 10px;
+}
+
+.input-box__input {
+  line-height: 1em;
+  font-weight: 325;
+  box-sizing: border-box;
+  padding: 17px 12px;
+  border: 1px solid #DDDAE7;
+  border-radius: 4px;
+
+  &:focus {
+    outline-color: $color-primary;
+  }
+}

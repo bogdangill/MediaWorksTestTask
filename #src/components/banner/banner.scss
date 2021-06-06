@@ -1,0 +1,29 @@
+.banner {
+  position: relative;
+  color: white;
+  background-image: linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+  padding: 70px;
+  border-radius: 10px;
+}
+
+.banner__text {
+  position: relative;
+  font-size: 2.12rem;
+  line-height: 1.3em;
+  font-weight: 600;
+  max-width: 560px;
+  margin-bottom: 45px;
+  z-index: 2;
+}
+
+.banner__btn {
+  position: relative;
+  max-width: 222px;
+  z-index: 2;
+}
+
+.banner__img {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}

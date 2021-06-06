@@ -1,0 +1,10 @@
+.link {
+  font-size: 1.12rem;
+  line-height: 1em;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

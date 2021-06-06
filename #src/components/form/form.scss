@@ -1,0 +1,10 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 370px;
+}
+
+.form__btn {
+  margin-bottom: 55px;
+}
