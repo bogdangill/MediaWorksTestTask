@@ -19,20 +19,31 @@
 
 .popup__content {
   position: relative;
+  min-width: 85%;
   max-width: 95%;
   background-color: #fff;
-  padding: 60px 60px 0 60px;
+  padding: 30px 30px 0 30px;
   border-radius: $border-radius;
   overflow: hidden;
+
+  @media (min-width: $screen-md) {
+    min-width: 490px;
+    padding: 60px 60px 0 60px;
+  }
 }
 
 .popup__title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 1.3em;
   font-weight: 600;
   color: $color-palite;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 17px;
+
+  @media (min-width: $screen-md) {
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+  }
 }
 
 .popup__text {
@@ -52,25 +63,6 @@
   opacity: 1;
   visibility: visible;
 }
-
-// .popup--visible::-webkit-scrollbar {
-//   width: 2vw;
-// }
-
-// .popup--visible::-webkit-scrollbar-track {
-//   box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-// }
-
-// .popup--visible::-webkit-scrollbar-thumb {
-//   background-color: $color-primary;
-//   outline: 1px solid darken($color-primary, 75%);
-//   border-radius: $border-radius;
-
-//   &:hover {
-//     cursor: pointer;
-//     background-color: lighten($color-primary, 5%);
-//   }
-// }
 
 .popup--hidden {
   opacity: 0;
