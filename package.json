@@ -2,6 +2,7 @@
   "name": "gulp-evhen-template",
   "version": "1.0.0",
   "description": "gulp bundle with necessary & extra plugins",
+  "homepage" : "https://bogdangill.github.io/MediaWorksTestTask",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
