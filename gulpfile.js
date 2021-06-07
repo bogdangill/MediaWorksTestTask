@@ -161,7 +161,13 @@ function js() {
   return src(path.src.js)
     .pipe(fileinclude())
     .pipe(babel({
-      presets: ['@babel/env']
+      "presets": [
+        [ "@babel/preset-env", {
+          "targets": {
+            "browsers": [ "last 2 versions", "ie >= 10" ]
+          }
+        }]
+      ]    
     }))
     .pipe(dest(path.build.js))
     .pipe(
