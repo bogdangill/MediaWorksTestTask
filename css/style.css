@@ -381,7 +381,7 @@ template {
 @font-face {
   font-family: "SegoeUI";
   font-display: swap;
-  src: url("../fonts/SegoeUI-SemiBold.woff2") format("woff2"), url("fonts/SegoeUI-SemiBold.woff") format("woff");
+  src: url("../fonts/SegoeUI-Semibold.woff2") format("woff2"), url("fonts/SegoeUI-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
@@ -389,7 +389,7 @@ template {
 @font-face {
   font-family: "Whitney";
   font-display: swap;
-  src: url("../fonts/Whitney-SemiBold.woff2") format("woff2"), url("fonts/Whitney-SemiBold.woff") format("woff");
+  src: url("../fonts/Whitney-Semibold.woff2") format("woff2"), url("fonts/Whitney-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
