@@ -16,12 +16,14 @@
 .hero__text-block {
   @media (min-width: $screen-md) {
     flex-basis: 45%;
+    max-width: 45%; //gecko fix
   }
 }
 
 .hero__image-block {
   @media (min-width: $screen-md) {
     flex-basis: 55%;
+    max-width: 55%; //gecko fix
   }
 }
 

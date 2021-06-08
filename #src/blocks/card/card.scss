@@ -17,6 +17,7 @@
 .card__text-block {
   @media (min-width: $screen-md) {
     flex-basis: 60%;
+    max-width: 60%;
     padding-top: 7.3%;
     padding-left: 7.3%;
     order: 1;
@@ -27,6 +28,7 @@
   @media (min-width: $screen-md) {
     // flex-basis: 190px;
     flex-basis: 34.5%;
+    max-width: 34.5%;
     order: 2;
     margin: 20px 10px;
   }

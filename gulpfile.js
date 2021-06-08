@@ -131,8 +131,7 @@ function css() {
     )
     .pipe(
       autoprefixer({
-        flexbox: "no-2009",
-        overrideBrowserslist: ["last 2 versions"],
+        overrideBrowserslist: ["last 1 version"],
         cascade: true
       })
     )
@@ -164,7 +163,8 @@ function js() {
       "presets": [
         [ "@babel/preset-env", {
           "targets": {
-            "browsers": [ "last 2 versions", "ie >= 10" ]
+            "browsers": "last 2 versions",
+            "ie": "11"
           }
         }]
       ]    
