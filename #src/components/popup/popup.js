@@ -9,8 +9,8 @@ function bodyLock() {
   const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 
   //задаю отступ для всех фиксированных объектов
-  for (let lockPadding of lockPaddings) {
-    lockPadding.style.paddingRight = lockPaddingValue;
+  for (let i = 0; i < lockPaddings.length; i++) {
+    lockPaddings[i].style.paddingRight = lockPaddingValue;
   }
 
   body.style.overflow = 'hidden';
@@ -25,8 +25,8 @@ function bodyLock() {
 //убираю отступ при закрытии попапа
 function bodyUnlock() {
   setTimeout(() => {
-    for (let lockPadding of lockPaddings) {
-      lockPadding.style.paddingRight = '0px';
+    for (let i = 0; i < lockPaddings.length; i++) {
+      lockPaddings[i].style.paddingRight = '0px';
     }
 
     body.style.paddingRight = '0px';
@@ -39,10 +39,10 @@ function bodyUnlock() {
   }, timeout);
 }
 
-for (let popupTrigger of popupTriggers) {
-  popupTrigger.addEventListener("click", (evt) => {
+for (let i = 0; i < popupTriggers.length; i++) {
+  popupTriggers[i].addEventListener("click", (evt) => {
     evt.preventDefault();
-    let popupName = popupTrigger.dataset.popup;
+    let popupName = popupTriggers[i].dataset.popup;
     let currentPopup = document.querySelector('.popup--'+popupName);
     if (currentPopup !== null && unlock) {
       popupOpen(currentPopup);
