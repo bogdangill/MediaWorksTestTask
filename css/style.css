@@ -26,8 +26,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -82,8 +81,7 @@ svg:not(:root) {
 }
 
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -268,8 +266,7 @@ button::-moz-focus-inner,
 
 input[type="radio"],
 input[type="checkbox"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -429,12 +426,9 @@ template {
 */
 
 .menu {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   list-style: none;
   width: 100%;
   padding: 0;
@@ -442,10 +436,8 @@ template {
 }
 
 .menu__item {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 
 .menu__item:last-child {
@@ -453,16 +445,12 @@ template {
 }
 
 .btn {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   padding: 13px 22px;
   white-space: nowrap;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   border: none;
 }
@@ -470,7 +458,6 @@ template {
 .btn__icon {
   width: 25px;
   height: 25px;
-  fill: currentColor;
   margin-right: 12px;
 }
 
@@ -518,12 +505,9 @@ template {
 
 .card {
   font-family: 'SegoeUI', sans-serif;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   min-height: 235px;
   background-color: #F6F5F9;
   border-radius: 6px;
@@ -545,10 +529,8 @@ template {
 }
 
 .input-box {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
@@ -565,8 +547,7 @@ template {
 .input-box__input {
   line-height: 1em;
   font-weight: 325;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 17px 12px;
   border: 1px solid #DDDAE7;
   border-radius: 4px;
@@ -595,10 +576,8 @@ template {
 .btn-menu {
   position: relative;
   z-index: 1;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   padding: 0;
   width: 24px;
   background: transparent;
@@ -619,7 +598,6 @@ template {
   font-size: 0;
   color: transparent;
   background: white;
-  -webkit-transition: background 0.3s 0.3s;
   transition: background 0.3s 0.3s;
 }
 
@@ -633,7 +611,6 @@ template {
   background: white;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-  -webkit-transition: top 0.3s 0.3s, -webkit-transform 0.3s;
   transition: top 0.3s 0.3s, -webkit-transform 0.3s;
   transition: top 0.3s 0.3s, transform 0.3s;
   transition: top 0.3s 0.3s, transform 0.3s, -webkit-transform 0.3s;
@@ -648,14 +625,12 @@ template {
 }
 
 .btn-menu--close > span {
-  -webkit-transition: background 0.3s 0s;
   transition: background 0.3s 0s;
   background: transparent;
 }
 
 .btn-menu--close > span:before,
 .btn-menu--close > span:after {
-  -webkit-transition: top 0.3s, -webkit-transform 0.3s 0.3s;
   transition: top 0.3s, -webkit-transform 0.3s 0.3s;
   transition: top 0.3s, transform 0.3s 0.3s;
   transition: top 0.3s, transform 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
@@ -703,21 +678,16 @@ template {
 }
 
 .header__inner {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__menu {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
+  flex-basis: 40%;
+  max-width: 40%;
+  flex-grow: 1;
   padding: 0 2.5%;
 }
 
@@ -731,27 +701,22 @@ template {
 
 .hero {
   color: white;
-  background-image: -webkit-gradient(linear, left top, right top, from(#2D1686), to(#4E33B5));
   background-image: linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
   padding: 155px 0 5.5% 0;
 }
 
 .hero__row {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .hero__row > * {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 .hero__text-block,
 .hero__image-block {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 .hero__title {
@@ -783,22 +748,18 @@ template {
 }
 
 .advantages__row {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
 }
 
 .advantages__row > * {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 .advantages__col {
-  -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
+  flex: 0 0 100%;
   max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -811,7 +772,6 @@ template {
 .banner {
   position: relative;
   color: white;
-  background-image: -webkit-gradient(linear, left top, right top, from(#2D1686), to(#4E33B5));
   background-image: linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
   padding: 6%;
   border-radius: 10px;
@@ -846,7 +806,6 @@ template {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transition: .2s;
   transition: .2s;
   z-index: 100;
   overflow-y: scroll;
@@ -854,12 +813,9 @@ template {
 
 .popup__body {
   min-height: 100%;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup__content {
@@ -905,12 +861,9 @@ template {
 }
 
 .form {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .form__btn {
@@ -933,19 +886,17 @@ template {
   }
 
   .card__text-block {
-    -ms-flex-preferred-size: 60%;
-        flex-basis: 60%;
+    flex-basis: 60%;
+    max-width: 60%;
     padding-top: 7.3%;
     padding-left: 7.3%;
-    -ms-flex-order: 1;
-        order: 1;
+    order: 1;
   }
 
   .card__image-block {
-    -ms-flex-preferred-size: 34.5%;
-        flex-basis: 34.5%;
-    -ms-flex-order: 2;
-        order: 2;
+    flex-basis: 34.5%;
+    max-width: 34.5%;
+    order: 2;
     margin: 20px 10px;
   }
 
@@ -954,13 +905,13 @@ template {
   }
 
   .hero__text-block {
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%;
+    flex-basis: 45%;
+    max-width: 45%;
   }
 
   .hero__image-block {
-    -ms-flex-preferred-size: 55%;
-        flex-basis: 55%;
+    flex-basis: 55%;
+    max-width: 55%;
   }
 
   .hero__btn {
@@ -1000,8 +951,7 @@ template {
   }
 
   .advantages__col--lg-6 {
-    -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
+    flex: 0 0 50%;
     max-width: 50%;
     padding-left: 15px;
     padding-right: 15px;
@@ -1040,24 +990,19 @@ template {
 
 @media (max-width: 767px) {
   .menu {
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .menu__item {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    flex-basis: 100%;
     padding: 1em;
     border-bottom: 1px solid white;
   }
 
   .card {
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
   }
 
@@ -1069,7 +1014,6 @@ template {
     height: 100vh;
     overflow-y: scroll;
     background-color: rgba(45, 22, 134, 0.95);
-    -webkit-transition: left 0.2s ease-in-out;
     transition: left 0.2s ease-in-out;
     z-index: 999;
     padding: 0;
